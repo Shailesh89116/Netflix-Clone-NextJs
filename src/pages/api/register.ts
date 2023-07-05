@@ -32,6 +32,10 @@ export default async function handler(req: NextApiRequest, res:NextApiResponse){
                 image: ' ',
                 emailVerified: new Date()
         }
+        });
+
+        res.status(200).json({
+            user
         })
         
     } catch (error) {
